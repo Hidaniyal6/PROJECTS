@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<h3 lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Daniyal - Web Devloper</title>
+        <link rel="stylesheet" href="style.css">
+
+        <!-- <script src="https://kit.fontawesome.com/f7661308fe.js" crossorigin="anonymous"></script> -->
+    </head>
+
+    <script>
+        function myFunction() {
+            alert("Your Message has been Submitted!");
+        }
+    </script>
+     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <h2><span>D</span>aniyal <span>P</span>ortfolio</h2>
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="main-section">
+                    <div class="header-text" id="intro">
+                        <p>A Passionate, Web Developer</p>
+                        <h2>Hi, I'm <span>Daniyal</span> & I am a <br>
+                        <span id="element"></span></h2>
+                    </div>
+                    <div class="header-text">
+                        <img src="mainImg.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- about -->
+
+        <h1 class="sub-title">About Me</h1>
+        <div id="about">
+            <!-- <div class="middle-container"> -->
+            <!-- <div class="row"> -->
+            <div class="about-col-1">
+                <img class="image" src="image.jpg" alt="Second image">
+            </div>
+            <div class="about-col-2">
+                <!-- <h1 class="sub-title">About Me</h1> -->
+                <p>I'm a Passionate, Web Developer / Designer , and <br> Programmer .
+                    I have a passion for Web <br>
+                    Development/Designing and Programming/Coding <br>and love to
+                    create Websites,Softwares and
+                    <br>Web Applications.<br>
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">
+                        Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education
+                    </p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience
+                    </p>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Hypertext Markup Language (HTML)</span><br></li>
+                        <li><span>Cascading Style Sheet (CSS)</span><br></li>
+                        <li><span>JavaScript</span><br></li>
+                        <li><span>JQuery</span><br></li>
+                        <li><span>Bootstrap</span><br></li>
+                        <li><span>React JS </span><br></li>
+                    </ul>
+                </div>
+
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>INTERNEE</span><br>4 Month Virtual Internship from CodeSoft</li>
+                        <li><span>FRESHER</span><br>Learning Something New Everyday</li>
+                        <li><span>INTERNEE</span><br>3 Month Virtual Internship from CodeAlpha</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Matriculation</span><br>2015-17</li>
+                        <li><span>Intermediate Fsc(Pre-Engineering)</span><br>2017-19</li>
+                        <li><span>Bachelors (BSIT)</span><br>2019-23</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- <div class="about-col-1">
+                        <img class="image" src="pic.jpg" alt="Second image">
+                    </div> -->
+            <!-- </div> -->
+            <!-- </div> -->
+        </div>
+
+        <!-- service -->
+
+        <div id="services">
+            <div class="sec-middle-container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Development</h2>
+                        <p>I'm a developer, so I know how to create your website to run across devices using the latest
+                            technologies available...</p>
+                        <a href="#">Learn more</a>
+                    </div>
+
+                    <div>
+                        <i class="fa-brands fa-app-store-ios"></i>
+                        <h2>Web Designing</h2>
+                        <p>I can build the attractive user friendly website design</p>
+                        <a href="#">Learn more</a>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <h2>Software Development</h2>
+                        <p>I love to code and familiar with latest Programming language and can let your job done
+                            efficiently..</p>
+                        <a href="#">Learn more</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- portfolio -->
+
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="ss3.PNG">
+                        <div class="layer">
+                            <h3>DKCoder</h3>
+                            <p>The Blogging Website</p>
+                            <a href="https://dkcoder.vercel.app/" target="_blank"> <i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="ss2.PNG" alt="Blog Website">
+                        <div class="layer">
+                            <h3>Bootstrap Website</h3>
+                            <p>My First Bootstrap Website</p>
+                            <a href="https://dkblog-iota.vercel.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="ss1.PNG">
+                        <div class="layer">
+                            <h3>Ghauri Meals</h3>
+                            <p>My first practice project in web development</p>
+                            <a href="https://ghaurimeals.vercel.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="ss5.PNG" alt="Blog Website">
+                        <div class="layer">
+                            <h3>DK Age Calculator</h3>
+                            <p>Lets calculate your age with DKCalculator..</p>
+                            <a href="https://dk-age-calculator.vercel.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="ss4.PNG">
+                        <div class="layer">
+                            <h3>DK Gym Center</h3>
+                            <p>Gym and Fitness Website</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="ss6.PNG">
+                        <div class="layer">
+                            <h3>Portfolio Website</h3>
+                            <p>Simple portfolio web</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+
+        <!-------------------------- contact ------------------------------>
+
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1> <br>
+                        <p style="font-size: large;"><i class="fas fa-paper-plane"></i>daniyalsajid006@gmail.com</p>
+                        <br>
+                        <p style="font-size: large;"><i class="fas fa-phone-square-alt"></i>+923157944811</p> <br>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/me/"><i class="fab fa-facebook"></i></a>
+                            <a href="https://twitter.com/home"><i class="fab fa-twitter-square"></i></a>
+                            <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/m-daniyal-sajid/"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/Hidaniyal6"><i class="fa-brands fa-github"></i></a>
+
+                        </div>
+
+                        <!--RESUME LINK-->
+
+                        <a href="Daniyal-FrontendDeveloper-Resume.pdf" class="btn btn2">Download Resume <i
+                                class="fa-solid fa-download"></i></a>
+
+                        <!-- <a href="Resume.pdf" target="_blank" rel="noopener noreferrer"></a> -->
+                    </div>
+                    <div class="contact-right"></div>
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" onclick="myFunction()" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>copyright &#169; Daniyal. Made with <i class="fas fa-heart"></i> 2023 All rights reserved </p>
+            </div>
+        </div>
+
+
+
+        <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname) {
+                for (tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu() {
+                sidemenu.style.right = "0";
+            }
+
+            function closemenu() {
+                sidemenu.style.right = "-200px";
+            }
+
+        </script>
+        <script src="https://kit.fontawesome.com/462f495e04.js" crossorigin="anonymous"></script>
+        <script>
+            var typed = new Typed('#element', {
+              strings: ['<i>Frontend Developer</i>', '<i>Web Designer...</i>' , '<i>Software Engineer...</i>'],
+              typeSpeed: 50,
+            });
+          </script>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    </body>
+
+    </html>
