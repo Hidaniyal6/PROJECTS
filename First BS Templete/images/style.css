@@ -1,0 +1,304 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%;
+    background-size: cover;
+    padding: 0px;
+    margin: 0px;
+}
+
+#navbar {
+    background-color: rgba(49, 4, 248, 0.726);
+    width: 100%;
+    /* width: 1400px; */
+    /* display: block;
+    margin: auto; */
+}
+
+#navbar .container {
+    padding-right: 0px;
+    padding-left: 0px;
+    /* margin: auto;
+    display: block; */
+}
+
+#nav {
+    display: flex;
+    margin-bottom: 0px;
+}
+
+.heading {
+    color: white;
+}
+
+#nav li {
+    list-style-type: none;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+#nav li a {
+    color: white;
+    padding: 5px 23px;
+    text-decoration: none;
+    margin-bottom: 0px;
+}
+
+#nav li a:hover {
+    background-color: white;
+    color: rgb(89, 0, 255);
+    border-radius: 10px;
+}
+
+#main {
+    background-image: url("pic3.jpg");
+    background-size: cover;
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+#main .container {
+    padding: 90px 0px;
+}
+
+#main .heading2 {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.836);
+    text-align: center;
+}
+
+#main p {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.836);
+    text-align: center;
+}
+
+/* Services Section  */
+#services {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.heading3 {
+    text-align: center;
+}
+
+#services .heading3::after {
+    content: "";
+    width: 120px;
+    height: 3px;
+    background-color: black;
+    display: block;
+    margin: 15px auto;
+}
+
+.icons {
+    text-align: center;
+}
+
+.icons .fa {
+    font-size: 50px;
+}
+
+/* Testimonial Section  */
+#test {
+    background-image: url("pic10.jpg");
+    margin-bottom: 40px;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.heading3::after {
+    content: "";
+    width: 120px;
+    height: 3px;
+    background-color: white;
+    display: block;
+    margin: 15px auto;
+}
+
+#test h2,
+.author,
+.brand {
+    color: white;
+    text-align: center;
+}
+
+#test p {
+    color: white;
+    text-align: center;
+}
+
+#test img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+/* Recent News Section  */
+#news {
+    padding: 10px 0;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+#news .container {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#news .heading3::after {
+    content: "";
+    width: 120px;
+    height: 2px;
+    background-color: rgb(10, 10, 10);
+    display: block;
+    margin: 15px auto;
+}
+
+#news img {
+    width: 100%;
+    height: 100%;
+    padding: 0 5px;
+}
+
+#news h5 {
+    color: blue;
+}
+
+#news p {
+    margin-bottom: 0px;
+}
+
+#news .opt {
+    color: blue;
+    font-size: 15px;
+}
+
+.date::before {
+    content: "\f073";
+    font-family: FontAwesome;
+    padding-right: 5px;
+}
+
+a.opt::after {
+    content: "\f101";
+    font-family: FontAwesome;
+    padding-left: 3px;
+    padding-bottom: 10px;
+}
+
+/* Footer Section */
+#footer {
+    background-color: #34495e;
+    width: 100%;
+    color: white;
+    padding: 10px 0;
+}
+
+#footer .heading3::after {
+    content: "";
+    width: 80px;
+    height: 2px;
+    background-color: white;
+    display: block;
+    margin: 15px auto;
+    /* width: 100%; */
+}
+
+.opt1 {
+    color: white;
+}
+
+a.opt1::before {
+    content: "\f101";
+    font-family: FontAwesome;
+    padding-right: 5px;
+}
+
+#footer2 {
+    background-color: #2c3e50;
+    color: white;
+}
+
+@media (max-width:600px) {
+    #navbar {
+        /* width: 700px; */
+        display: block;
+        margin: auto;
+        width: 100%;
+    }
+
+    #main {
+        background-image: url("pic3.jpg");
+        /* width: 700px; */
+        background-size: cover;
+        /* width: 100%; */
+        font-size: 1.2rem;
+    }
+
+    #main p {
+        font-size: 1rem;
+    }
+
+    /* #services {
+        width: 700px;
+    } */
+
+    #test {
+        width: 700px;
+        /* width: 100%; */
+    }
+
+    #news {
+        width: 700px;
+        padding: 8px;
+    }
+    #footer {
+        width: 700px;
+    }
+
+    #footer2 {
+        width: 700px;
+    }
+}
+
+@media (max-width:768px) {
+
+    #navbar .heading {
+        text-align: center;
+    }
+
+    #nav {
+        margin-bottom: 10px;
+    }
+
+    #test .brand {
+        margin-bottom: 10px;
+    }
+
+    #news .section {
+        margin-bottom: 20px;
+    }
+
+    #footer2 {
+        text-align: center;
+    }
+}
+
+@media (max-width:600px) {
+
+    #navbar, #main, #services{
+        width: 730px;
+    }
+}
